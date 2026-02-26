@@ -89,8 +89,7 @@ async function getProductHunt(token, order = "VOTES", limit = 5, after = null) {
 async function afficherOutils() {
   const githubRepos = await getGitHubTrending(5);
   
-  // ⚠️ Remplace "TON_TOKEN" par ton vrai Developer Token Product Hunt
-  const productHuntPosts = await getProductHunt("6PxehSkPzBEbu0CeLG8tzEjf0Ervhq9Dv_atAD1l_uQ", "NEWEST", 5);
+const productHuntPosts = await getProductHunt(process.env.PRODUCTHUNT_TOKEN, "NEWEST", 5);
 
   const outils = [...productHuntPosts, ...githubRepos];
   const container = document.getElementById("contenu");
@@ -106,3 +105,4 @@ async function afficherOutils() {
 }
 
 afficherOutils();
+
