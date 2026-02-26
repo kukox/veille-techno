@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <title>Veille Technologique</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Privacy-friendly analytics by Plausible -->
-<script async src="https://plausible.io/js/pa-0GeHe8gMEmN7tlHNrUogK.js"></script>
-<script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
-</script>
-
 </head>
 <body>
   <h1>📊 Nouveaux outils & tendances</h1>
+  <div id="filters"> 
+	<button onclick="filtrer('IA')">IA</button> 
+	<button onclick="filtrer('DevTools')">DevTools</button> 
+	<button onclick="filtrer('Productivite')">Productivité</button> 
+	<button onclick="filtrer('DesignUX')">Design & UX</button> 
+	<button onclick="filtrer('DataCloud')">Data & Cloud</button> 
+	<button onclick="filtrer('DevOps')">DevOps</button> 
+	<button onclick="filtrer(null)">Tous</button>
   <div id="contenu"></div>
   <script src="script.js"></script>
 </body>
 </html>
-
