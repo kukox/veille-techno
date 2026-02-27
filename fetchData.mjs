@@ -75,7 +75,7 @@ async function main() {
   const productHuntPosts = await getProductHunt(token);
 
   const allItems = [...githubRepos, ...productHuntPosts];
-
+  console.log(JSON.stringify(data, null, 2));
   // Filtrage par catégories
   const filtered = allItems.map(item => {
     const category = filterByCategory(item, categories);
@@ -88,3 +88,4 @@ async function main() {
 }
 
 main();
+
