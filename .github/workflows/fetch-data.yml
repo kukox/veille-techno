@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm install
         
+       
+      - name: Lister les fichiers 
+        run: ls -la
 
       - name: Run fetchData script
         run: node fetchData.mjs
