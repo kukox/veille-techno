@@ -32,7 +32,7 @@ jobs:
         
 
       - name: Run fetchData script
-        run: node fetchData.jsm
+        run: node fetchData.mjs
         env:
           PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
 
